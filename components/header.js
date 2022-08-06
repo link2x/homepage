@@ -5,7 +5,7 @@ import { Container, Row } from '../components/skeletonhelpers.js'
 class Logo extends Component {
   render() {
     return  <div className="one-half column showcenter u-max-full-width">
-              <Image className="resize_fit_center showcenter" src="https://link2x.us/i/STIFLEWEBP.webp" width='200%' height='100%' layout='responsive' objectFit='contain' alt="Logo" priority/>
+              <Image className="resize_fit_center showcenter" src="https://link2x.us/i/STIFLEWEBP.webp" width='200%' height='100%' layout='responsive' objectFit='contain' alt="Logo" />
             </div>
   }
 }

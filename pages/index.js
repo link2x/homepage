@@ -11,10 +11,14 @@ import Header from '../components/header.js'
 import Footer from '../components/footer.js'
 import LinkButton from '../components/button.js'
 import SmallHeading from '../components/smallheading.js'
+import { randomTitle } from '../functions/randomtitle.js'
 
 export default function Home() {
   return (
     <div>
+    <Head>
+      <title>Eden Simmons - {randomTitle()}</title>
+    </Head>
     <Container pad={true}>
       <Header />
       <Row pad={true}>
