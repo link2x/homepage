@@ -1,10 +1,11 @@
 import React, { Component } from 'React';
+import Image from 'next/image'
 import { Container, Row } from '../components/skeletonhelpers.js'
 
 class Logo extends Component {
   render() {
-    return  <div class="one-half column showcenter u-max-full-width">
-              <img class="resize_fit_center showcenter" src="https://link2x.us/i/STIFLEWEBP.webp" alt="Nick Simmons Logo"/>
+    return  <div className="one-half column showcenter u-max-full-width">
+              <Image className="resize_fit_center showcenter" src="https://link2x.us/i/STIFLEWEBP.webp" width='200%' height='100%' layout='responsive' objectFit='contain' alt="Nick Simmons Logo"/>
             </div>
   }
 }
@@ -13,14 +14,14 @@ class Header extends Component {
   render() {
     return  <Row>
               <Logo />
-              <div class="one-half column bio pad">
+              <div className="one-half column bio pad">
                 <h2>
                   Hi, there!
                 </h2>
                 <p>
                   I am Eden Simmons.<br />
-                  I'm a multi-genre song-writer and producer.<br />
-                  I've been making music since 2006.<br />
+                  I&apos;m a multi-genre song-writer and producer.<br />
+                  I&apos;ve been making music since 2006.<br />
                 </p>
               </div>
             </Row>

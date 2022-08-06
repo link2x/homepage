@@ -42,13 +42,13 @@ export default function Home() {
       <SmallHeading>
         Other Bits
       </SmallHeading>
-      <Row>
+      <Row pad={true}>
         <LinkButton width='six' href='#' icon={faGithub} />
         <Column width='six' center={false}>
           I write code sometimes, it lives here.
         </Column>
       </Row>
-      <Row>
+      <Row pad={true}>
         <LinkButton width='six' href='#' icon={faLinkedin} />
         <Column width='six' center={false}>
           Resume / Work Experience.

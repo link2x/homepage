@@ -5,7 +5,7 @@ class Container extends Component {
     super(props)
   }
   render() {
-    return (this.props.pad ? <div class="container pad">{this.props.children}</div> : <div class="container">{this.props.children}</div>)
+    return (this.props.pad ? <div className="container pad">{this.props.children}</div> : <div className="container">{this.props.children}</div>)
   }
 }
 
@@ -18,7 +18,7 @@ class Row extends Component {
     super(props)
   }
   render() {
-    return (this.props.pad ? <div class="row u-full-width bio pad">{this.props.children}</div> : <div class="row u-full-width bio">{this.props.children}</div>)
+    return (this.props.pad ? <div className="row u-full-width bio pad">{this.props.children}</div> : <div className="row u-full-width bio">{this.props.children}</div>)
   }
 }
 
@@ -34,7 +34,7 @@ class Column extends Component {
     return this.props.width + (this.props.center ? ' columns u-full-width bio' : ' columns u-full-width')
   }
   render() {
-    return  <div class={this.defineWidth()} style={this.props.center ? {} : {textAlign: 'left', paddingTop: 0.25 + 'em'}}>{this.props.children}</div>
+    return  <div className={this.defineWidth()} style={this.props.center ? {} : {textAlign: 'left', paddingTop: 0.25 + 'em'}}>{this.props.children}</div>
   }
 }
 

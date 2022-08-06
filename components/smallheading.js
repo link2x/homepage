@@ -5,8 +5,8 @@ class SmallHeading extends Component {
     super(props)
   }
   render() {
-    return  <div class="row u-full-width bio pad">
-              <div class="twelve columns">
+    return  <div className="row u-full-width bio pad">
+              <div className="twelve columns">
                 <h5>{this.props.children}</h5>
               </div>
             </div>

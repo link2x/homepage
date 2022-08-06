@@ -7,7 +7,7 @@ class YoutubePlayer extends Component {
     super(props);
   }
   render() {
-    return  <div class="twelve columns">
+    return  <div className="twelve columns">
                 <LiteYouTubeEmbed id={this.props.videoID} title={this.props.videoTitle}/>
             </div>
   }

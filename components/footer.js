@@ -10,7 +10,7 @@ class Footer extends Component {
     super(props)
   }
   render() {
-    return  <div class="footer u-full-width pad pad-bottom">
+    return  <div className="footer u-full-width pad pad-bottom">
               <Container>
                 <Row>
                   <Column width='four'>
