@@ -1,4 +1,4 @@
-import React, { Component } from 'React';
+import React, { Component } from 'react';
 import Image from 'next/image'
 import { Container, Row } from '../components/skeletonhelpers.js'
 
