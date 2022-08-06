@@ -1,26 +1,48 @@
-html,
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+.resize_fit_center {
+    max-width:100%;
+    max-height:100%;
+    vertical-align: middle;
+}
+
+.bio {
+    text-align: center;
+}
+
+.pad {
+    padding-top: 24px !important;
+}
+
+.pad-bottom {
+    padding-bottom: 8px;
+}
+
+.pad-fa {
+    vertical-align: middle;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+background: #0f161e;
+//background-image: url("http://link2x.us/i/WebsiteBG.png");
+background-repeat: no-repeat;
+background-position: center center;
+color: #00a8ac;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+#email {
+unicode-bidi:bidi-override;
+direction: rtl;
 }
 
-* {
-  box-sizing: border-box;
+.footer {
+background-color: #085766;
+color: #0f161e;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.showcenter {
+height: 100%;
+width: 100%;
+vertical-align: middle;
+text-align: center;
 }
