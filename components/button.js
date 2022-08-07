@@ -12,8 +12,11 @@ class LinkButton extends Component {
 
   render() {
     return  <div className={this.defineWidth()}>
-                <a className="button button-primary u-full-width" style={{paddingTop: 0.25 + 'em'}} href={this.props.href}>
-                    <FontAwesomeIcon icon={this.props.icon} size='2x' />
+                <a className="button button-primary u-full-width" href={this.props.href}>
+                    <FontAwesomeIcon icon={this.props.icon} size='2x' style={{paddingTop: 0.25 + 'em'}} />
+                    <span style={{marginLeft: 1 + 'em', position: 'relative', top: -0.25 + 'em'}}>
+                      {this.props.label ? this.props.label : ''}
+                    </span>
                 </a>
             </div>
   }

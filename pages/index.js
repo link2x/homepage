@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faApple, faAmazon, faGooglePlay, faSpotify, faBandcamp, faTwitter, faFacebook, faYoutube, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faApple, faAmazon, faSpotify, faBandcamp, faTwitter, faFacebook, faYoutube, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faTShirt } from '@fortawesome/free-solid-svg-icons'
 import YoutubePlayer from '../components/youtubeplayer.js'
 import { Container, Row, Column } from '../components/skeletonhelpers.js'
@@ -28,32 +28,34 @@ export default function Home() {
         Socials
       </SmallHeading>
       <Row>
-        <LinkButton width='four' href='#' icon={faTwitter} />
-        <LinkButton width='four' href='#' icon={faFacebook} />
-        <LinkButton width='four' href='#' icon={faYoutube} />
+        <LinkButton width='four' href='https://youtube.com/link2x101' icon={faYoutube} label='YouTube' />
+        <LinkButton width='four' href='https://twitter.com/link2x101' icon={faTwitter} label='Twitter' />
+        <LinkButton width='four' href='https://fb.com/ELSEIFedm' icon={faFacebook} label='Facebook' />
       </Row>
       <SmallHeading>
         Stores
       </SmallHeading>
       <Row>
-        <LinkButton width='two' href='#' icon={faApple} />
-        <LinkButton width='two' href='#' icon={faAmazon} />
-        <LinkButton width='two' href='#' icon={faGooglePlay} />
-        <LinkButton width='two' href='#' icon={faSpotify} />
-        <LinkButton width='two' href='#' icon={faBandcamp} />
-        <LinkButton width='two' href='#' icon={faTShirt} />
+        <LinkButton width='four' href='https://open.spotify.com/artist/3H2On8EDD6nwSUSlWah7gb' icon={faSpotify} label='Spotify' />
+        <LinkButton width='four' href='https://music.apple.com/us/album/brotherhood-single/1585752974?uo=4' icon={faApple} label='Apple Music' />
+        <LinkButton width='four' href='https://www.amazon.com/s/ref=ntt_srch_drd_B0031YYRY2?ie=UTF8&field-keywords=Nick%20Simmons&index=digital-music&search-type=ss' icon={faAmazon} label='Amazon Music' />
+      </Row>
+      <Row pad={true}>
+        <LinkButton width='four' href='https://music.youtube.com/channel/UCIJlGQ7FMVS-tmgjH_RwJjg' icon={faYoutube} label='YouTube Music' />
+        <LinkButton width='four' href='https://nicksimmons.bandcamp.com' icon={faBandcamp} label='Bandcamp' />
+        <LinkButton width='four' href='https://nicksimmons.threadless.com/' icon={faTShirt} label='Merch' />
       </Row>
       <SmallHeading>
         Other Bits
       </SmallHeading>
       <Row pad={true}>
-        <LinkButton width='six' href='#' icon={faGithub} />
+        <LinkButton width='six' href='https://github.com/link2x' icon={faGithub} label='GitHub' />
         <Column width='six' center={false}>
           I write code sometimes, it lives here.
         </Column>
       </Row>
       <Row pad={true}>
-        <LinkButton width='six' href='#' icon={faLinkedin} />
+        <LinkButton width='six' href='https://www.linkedin.com/in/eden-simmons-174b118b/' icon={faLinkedin} label='LinkedIn' />
         <Column width='six' center={false}>
           Resume / Work Experience.
         </Column>
