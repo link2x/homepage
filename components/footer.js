@@ -18,7 +18,7 @@ class Footer extends Component {
                       <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en_US" title="Creative Commons BY-SA">
                         <FontAwesomeIcon icon={ faCreativeCommons } />
                       </a><br />
-                      2006-2022
+                      2006 - {new Date().getFullYear()}
                     </p>
                   </Column>
                   <Column width='four'>

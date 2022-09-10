@@ -28,7 +28,7 @@ export default function Home() {
         Socials
       </SmallHeading>
       <Row>
-        <LinkButton width='four' href='https://youtube.com/link2x101' icon={faYoutube} label='YouTube' />
+        <LinkButton width='four' href='https://youtube.com/c/ELSEIFedm' icon={faYoutube} label='YouTube' />
         <LinkButton width='four' href='https://twitter.com/link2x101' icon={faTwitter} label='Twitter' />
         <LinkButton width='four' href='https://fb.com/ELSEIFedm' icon={faFacebook} label='Facebook' />
       </Row>
@@ -42,9 +42,10 @@ export default function Home() {
       </Row>
       <Row pad={true}>
         <LinkButton width='four' href='https://music.youtube.com/channel/UCIJlGQ7FMVS-tmgjH_RwJjg' icon={faYoutube} label='YouTube Music' />
-        <LinkButton width='four' href='https://nicksimmons.bandcamp.com' icon={faBandcamp} label='Bandcamp' />
+        <LinkButton width='four' href='https://elseif.bandcamp.com' icon={faBandcamp} label='Bandcamp' />
         <LinkButton width='four' href='https://nicksimmons.threadless.com/' icon={faTShirt} label='Merch' />
       </Row>
+      <br />
       <SmallHeading>
         Other Bits
       </SmallHeading>
