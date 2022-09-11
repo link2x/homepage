@@ -34,7 +34,7 @@ export default function Home() {
       <Row>
         <LinkButton width='four' href='https://open.spotify.com/artist/73yAfTEIyfHrWivS2TOTLg?si=yai3B_R4QFSn2ajCtxwE8g' icon={faSpotify} label='Spotify' />
         <LinkButton width='four' href='https://music.apple.com/us/album/brotherhood-single/1585752974?uo=4' icon={faApple} label='Apple Music' />
-        <LinkButton width='four' href='https://www.amazon.com/s/ref=ntt_srch_drd_B0031YYRY2?ie=UTF8&field-keywords=Nick%20Simmons&index=digital-music&search-type=ss' icon={faAmazon} label='Amazon Music' />
+        <LinkButton disabled width='four' href='https://www.amazon.com/s/ref=ntt_srch_drd_B0031YYRY2?ie=UTF8&field-keywords=Nick%20Simmons&index=digital-music&search-type=ss' icon={faAmazon} label='Amazon Music' />
       </Row>
       <Row pad={true}>
         <LinkButton width='four' href='https://music.youtube.com/channel/UCIVwLsPG9eEm-A3f2-axWPg' icon={faYoutube} label='YouTube Music' />
