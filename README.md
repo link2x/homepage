@@ -1,3 +1,5 @@
-People like to put their websites on GitHub, so now I did too!
+# link2x Homepage
 
-2022 rewrite in React/NextJS for fun and experience.
+*People like to put their websites on GitHub, so now I did too!*
+
+Rewrite with React, NextJS, and [Skeleton](https://github.com/dhg/Skeleton) for fun and experience.
