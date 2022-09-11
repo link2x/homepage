@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Image from 'next/image'
-import { Container, Row } from '../components/skeletonhelpers.js'
+import { Row } from '../components/skeletonhelpers.js'
 import logoImage from '../images/ELSEIFDraft.png'
 
 class Logo extends Component {

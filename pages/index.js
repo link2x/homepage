@@ -1,8 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { library } from '@fortawesome/fontawesome-svg-core'
 import { faApple, faAmazon, faSpotify, faBandcamp, faTwitter, faFacebook, faYoutube, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faTShirt } from '@fortawesome/free-solid-svg-icons'
 import YoutubePlayer from '../components/youtubeplayer.js'
@@ -41,7 +37,7 @@ export default function Home() {
         <LinkButton width='four' href='https://www.amazon.com/s/ref=ntt_srch_drd_B0031YYRY2?ie=UTF8&field-keywords=Nick%20Simmons&index=digital-music&search-type=ss' icon={faAmazon} label='Amazon Music' />
       </Row>
       <Row pad={true}>
-        <LinkButton width='four' href='https://music.youtube.com/channel/UCIJlGQ7FMVS-tmgjH_RwJjg' icon={faYoutube} label='YouTube Music' />
+        <LinkButton width='four' href='https://music.youtube.com/channel/UCIVwLsPG9eEm-A3f2-axWPg' icon={faYoutube} label='YouTube Music' />
         <LinkButton width='four' href='https://elseif.bandcamp.com' icon={faBandcamp} label='Bandcamp' />
         <LinkButton width='four' href='https://nicksimmons.threadless.com/' icon={faTShirt} label='Merch' />
       </Row>
