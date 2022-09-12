@@ -10,10 +10,17 @@ import LinkButton from '../components/button.js'
 import SmallHeading from '../components/smallheading.js'
 import { randomTitle } from '../functions/randomtitle.js'
 import CookieConsent, { getCookieConsentValue, Cookies } from 'react-cookie-consent'
-import initGA from '../functions/ga-utils'
+import { initGA } from '../functions/ga-utils'
 
 
 export default function Home() {
+
+  const handleAcceptCookie = () => {
+    if (process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID) {
+      console.log('initGA')
+      initGA(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID);
+    }
+  };
 
   useEffect(() => {
     const isConsent = getCookieConsentValue();
@@ -21,12 +28,6 @@ export default function Home() {
       handleAcceptCookie();
     }
   }, []);
-
-  const handleAcceptCookie = () => {
-    if (process.env.REACT_APP_GOOGLE_ANALYTICS_ID) {
-      initGA(process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
-    }
-  };
 
   return (
     <div>
