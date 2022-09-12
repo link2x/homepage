@@ -17,7 +17,6 @@ export default function Home() {
 
   const handleAcceptCookie = () => {
     if (process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID) {
-      console.log('initGA')
       initGA(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID);
     }
   };
