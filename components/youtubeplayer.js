@@ -8,7 +8,7 @@ class YoutubePlayer extends Component {
   }
   render() {
     return  <div className="twelve columns">
-                <LiteYouTubeEmbed id={this.props.videoID} title={this.props.videoTitle}/>
+                <LiteYouTubeEmbed id={this.props.videoID} title={this.props.videoTitle} cookie adNetwork />
             </div>
   }
 }
