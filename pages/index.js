@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { useEffect } from 'react'
 import { faApple, faAmazon, faSpotify, faBandcamp, faTwitter, faFacebook, faYoutube, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faTShirt } from '@fortawesome/free-solid-svg-icons'
 import YoutubePlayer from '../components/youtubeplayer.js'
@@ -8,8 +9,25 @@ import Footer from '../components/footer.js'
 import LinkButton from '../components/button.js'
 import SmallHeading from '../components/smallheading.js'
 import { randomTitle } from '../functions/randomtitle.js'
+import CookieConsent, { getCookieConsentValue, Cookies } from 'react-cookie-consent'
+import initGA from '../functions/ga-utils'
+
 
 export default function Home() {
+
+  useEffect(() => {
+    const isConsent = getCookieConsentValue();
+    if (isConsent === "true") {
+      handleAcceptCookie();
+    }
+  }, []);
+
+  const handleAcceptCookie = () => {
+    if (process.env.REACT_APP_GOOGLE_ANALYTICS_ID) {
+      initGA(process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
+    }
+  };
+
   return (
     <div>
     <Head>
@@ -60,6 +78,9 @@ export default function Home() {
       <Row pad={true} />
     </Container>
     <Footer />
+    <CookieConsent enableDeclineButton onAccept={handleAcceptCookie}>
+      This website uses cookies to enhance the user experience.
+    </CookieConsent>
     </div>
   )
 }
