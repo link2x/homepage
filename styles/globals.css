@@ -45,3 +45,38 @@ width: 100%;
 vertical-align: middle;
 text-align: center;
 }
+
+/* Button pretty: small zoom on hover */
+a.button:hover {
+    scale: 1.05;
+}
+
+/* Button pretty: button disabled warning */
+span.note-disabled::before {
+    opacity: 0%;
+    transition: opacity 0.25s;
+    font-size: 0.8em;
+    font-weight: bolder;
+    padding-top: 0.55em;
+    position: absolute;
+    content: "Currently unavailable :(";
+    z-index: 1000;
+    width: 99%; /* Default for mobile/flat layout */
+    height: 2em;
+}
+
+@media (min-width: 550px) { /* For desktop/grid layout */
+    span.note-disabled::before {
+        width: 30.5%;
+    }
+}
+
+/* Button pretty: fade disabled button behind warning message */
+span.note-disabled:hover::before {
+    opacity: 100%;
+}
+
+span.note-disabled:hover>span.button.disabled {
+    color: #000;
+    opacity: 25%;
+}

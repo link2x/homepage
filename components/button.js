@@ -20,11 +20,13 @@ class LinkButton extends Component {
                 </a>
             </div>
       else return <div className={this.defineWidth()}>
-      <span className="button u-full-width">
+      <span className="note-disabled">
+      <span className="button disabled u-full-width">
           <FontAwesomeIcon icon={this.props.icon} size='2x' style={{paddingTop: 0.25 + 'em'}} />
           <span style={{marginLeft: 1 + 'em', position: 'relative', top: -0.25 + 'em'}}>
             {this.props.label ? this.props.label : ''}
           </span>
+      </span>
       </span>
   </div>
   }

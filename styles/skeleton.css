@@ -187,7 +187,7 @@ input[type="button"] {
   border: 1px solid #bbb;
   cursor: pointer;
   box-sizing: border-box;
-  transition: opacity 0.5s, color 0.5s;
+  transition: all 0.05s, opacity 0.5s, color 0.5s;
   opacity: 100%; }
 .button:hover,
 button:hover,
