@@ -13,7 +13,7 @@ class Footer extends Component {
   // Generates my name within individual span elements for easter egg
   eggGenerator = () => {
     let output = "Eden Simmons".split("").map((value, index) =>
-      <span>{value}</span>
+      <span key={index}>{value}</span>
     );
     return output;
   }
