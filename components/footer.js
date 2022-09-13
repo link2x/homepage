@@ -9,6 +9,15 @@ class Footer extends Component {
   constructor(props) {
     super(props)
   }
+
+  // Generates my name within individual span elements for easter egg
+  eggGenerator = () => {
+    let output = "Eden Simmons".split("").map((value, index) =>
+      <span>{value}</span>
+    );
+    return output;
+  }
+
   render() {
     return  <div className="footer u-full-width pad pad-bottom">
               <Container>
@@ -22,8 +31,8 @@ class Footer extends Component {
                     </p>
                   </Column>
                   <Column width='four'>
-                    <p>
-                      Eden Simmons
+                    <p className="egg">
+                      {this.eggGenerator()}
                     </p>
                   </Column>
                   <Column width='four'>

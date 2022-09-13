@@ -80,3 +80,70 @@ span.note-disabled:hover>span.button.disabled {
     color: #000;
     opacity: 25%;
 }
+
+/* Easter Egg */
+@keyframes pride {
+    0% {color: inherit;}
+    14% {color: #55CDFC;}
+    28% {color: #F7A8B8;}
+    42% {color: #FFFFFF;}
+    56% {color: #F7A8B8;}
+    70% {color: #55CDFC;}
+    84% {color: inherit;}
+}
+
+.egg:hover>:nth-child(1) {
+    animation-name: pride;
+    animation-duration: 8s;
+    animation-delay: 0.5s;
+}
+.egg:hover>:nth-child(2) {
+    animation-name: pride;
+    animation-duration: 8s;
+    animation-delay: 0.75s;
+}
+.egg:hover>:nth-child(3) {
+    animation-name: pride;
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+.egg:hover>:nth-child(4) {
+    animation-name: pride;
+    animation-duration: 8s;
+    animation-delay: 1.25s;
+}
+.egg:hover>:nth-child(6) {
+    animation-name: pride;
+    animation-duration: 8s;
+    animation-delay: 1.50s;
+}
+.egg:hover>:nth-child(7) {
+    animation-name: pride;
+    animation-duration: 8s;
+    animation-delay: 1.75s;
+}
+.egg:hover>:nth-child(8) {
+    animation-name: pride;
+    animation-duration: 8s;
+    animation-delay: 2s;
+}
+.egg:hover>:nth-child(9) {
+    animation-name: pride;
+    animation-duration: 8s;
+    animation-delay: 2.25s;
+}
+.egg:hover>:nth-child(10) {
+    animation-name: pride;
+    animation-duration: 8s;
+    animation-delay: 2.50s;
+}
+.egg:hover>:nth-child(11) {
+    animation-name: pride;
+    animation-duration: 8s;
+    animation-delay: 2.75s;
+}
+.egg:hover>:nth-child(12) {
+    animation-name: pride;
+    animation-duration: 8s;
+    animation-delay: 3s;
+}
