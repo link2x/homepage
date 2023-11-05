@@ -20,7 +20,7 @@ class Header extends Component {
                   Hi, there!
                 </h2>
                 <p>
-                  I am Eden Simmons.<br />
+                  I&apos;m Eden!<br />
                   I&apos;m a multi-genre song-writer and producer.<br />
                   I&apos;ve been making music since 2006.<br />
                 </p>

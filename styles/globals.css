@@ -29,6 +29,10 @@ background-position: center center;
 color: #00a8ac;
 }
 
+h2 {
+    color: #D7CF07;
+}
+
 #email {
 unicode-bidi:bidi-override;
 direction: rtl;

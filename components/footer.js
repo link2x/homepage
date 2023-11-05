@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCreativeCommons } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import aaImage from '../images/aalogo.png'
+import Image from 'next/image'
 
 class Footer extends Component {
   constructor(props) {
@@ -31,9 +33,18 @@ class Footer extends Component {
                     </p>
                   </Column>
                   <Column width='four'>
-                    <p className="egg">
-                      {this.eggGenerator()}
-                    </p>
+                    <Row>
+                      <p>
+                        <div className="egg">
+                          {this.eggGenerator()}
+                        </div>
+                        <div style={{padding: '0.3em'}} />
+                        <Image className="showcenter" src={aaImage} width={72} height={32} objectFit='contain' alt="Aural Alliance" placeholder='blur' /><br />
+                      </p>
+                    </Row>
+                    <Row>
+                      
+                    </Row>
                   </Column>
                   <Column width='four'>
                     <p>
