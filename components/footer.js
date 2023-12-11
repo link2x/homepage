@@ -39,7 +39,9 @@ class Footer extends Component {
                           {this.eggGenerator()}
                         </div>
                         <div style={{padding: '0.3em'}} />
-                        <Image className="showcenter" src={aaImage} width={72} height={32} objectFit='contain' alt="Aural Alliance" placeholder='blur' /><br />
+                          <a href='https://www.auralalliance.page/'>
+                            <Image className="showcenter" src={aaImage} width={72} height={32} objectFit='contain' alt="Aural Alliance" placeholder='blur' /><br />
+                          </a>
                       </p>
                     </Row>
                     <Row>
